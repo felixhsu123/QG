@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6B71A815A9788600730B43 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6B71A715A9788600730B43 /* MapKit.framework */; };
+		CE6B71AC15A979BA00730B43 /* CZTopbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71AB15A979BA00730B43 /* CZTopbarViewController.m */; };
+		CE6B71AF15A979D800730B43 /* CZBottombarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */; };
 		CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95115A92C1D0095EFE5 /* UIKit.framework */; };
 		CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95315A92C1D0095EFE5 /* Foundation.framework */; };
 		CED3A95615A92C1D0095EFE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6B71A715A9788600730B43 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE6B71AA15A979BA00730B43 /* CZTopbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZTopbarViewController.h; sourceTree = "<group>"; };
+		CE6B71AB15A979BA00730B43 /* CZTopbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZTopbarViewController.m; sourceTree = "<group>"; };
+		CE6B71AD15A979D800730B43 /* CZBottombarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZBottombarViewController.h; sourceTree = "<group>"; };
+		CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZBottombarViewController.m; sourceTree = "<group>"; };
 		CED3A94D15A92C1D0095EFE5 /* CZGZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZGZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3A95115A92C1D0095EFE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED3A95315A92C1D0095EFE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6B71A815A9788600730B43 /* MapKit.framework in Frameworks */,
 				CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */,
 				CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */,
 				CED3A95615A92C1D0095EFE5 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +59,7 @@
 		CED3A94215A92C1C0095EFE5 = {
 			isa = PBXGroup;
 			children = (
+				CE6B71A715A9788600730B43 /* MapKit.framework */,
 				CED3A95715A92C1D0095EFE5 /* CZGZ */,
 				CED3A95015A92C1D0095EFE5 /* Frameworks */,
 				CED3A94E15A92C1D0095EFE5 /* Products */,
@@ -82,6 +92,10 @@
 				CED3A96315A92C1D0095EFE5 /* MainStoryboard.storyboard */,
 				CED3A96615A92C1D0095EFE5 /* CZViewController.h */,
 				CED3A96715A92C1D0095EFE5 /* CZViewController.m */,
+				CE6B71AA15A979BA00730B43 /* CZTopbarViewController.h */,
+				CE6B71AB15A979BA00730B43 /* CZTopbarViewController.m */,
+				CE6B71AD15A979D800730B43 /* CZBottombarViewController.h */,
+				CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */,
 				CED3A95815A92C1D0095EFE5 /* Supporting Files */,
 			);
 			path = CZGZ;
@@ -164,6 +178,8 @@
 				CED3A95E15A92C1D0095EFE5 /* main.m in Sources */,
 				CED3A96215A92C1D0095EFE5 /* CZAppDelegate.m in Sources */,
 				CED3A96815A92C1D0095EFE5 /* CZViewController.m in Sources */,
+				CE6B71AC15A979BA00730B43 /* CZTopbarViewController.m in Sources */,
+				CE6B71AF15A979D800730B43 /* CZBottombarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +293,7 @@
 				CED3A96D15A92C1D0095EFE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

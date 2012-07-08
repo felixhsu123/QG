@@ -59,7 +59,6 @@
 		CED3A94215A92C1C0095EFE5 = {
 			isa = PBXGroup;
 			children = (
-				CE6B71A715A9788600730B43 /* MapKit.framework */,
 				CED3A95715A92C1D0095EFE5 /* CZGZ */,
 				CED3A95015A92C1D0095EFE5 /* Frameworks */,
 				CED3A94E15A92C1D0095EFE5 /* Products */,
@@ -77,6 +76,7 @@
 		CED3A95015A92C1D0095EFE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B71A715A9788600730B43 /* MapKit.framework */,
 				CED3A95115A92C1D0095EFE5 /* UIKit.framework */,
 				CED3A95315A92C1D0095EFE5 /* Foundation.framework */,
 				CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */,

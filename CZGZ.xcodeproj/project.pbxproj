@@ -11,6 +11,11 @@
 		CE6B71AC15A979BA00730B43 /* CZTopbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71AB15A979BA00730B43 /* CZTopbarViewController.m */; };
 		CE6B71AF15A979D800730B43 /* CZBottombarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */; };
 		CE6B71B215A989C500730B43 /* CZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71B115A989C500730B43 /* CZTool.m */; };
+		CE6B71B515A98B9700730B43 /* CZWareHouseAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71B415A98B9700730B43 /* CZWareHouseAnnotation.m */; };
+		CE6B71B815A994AD00730B43 /* CZWareHouseAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71B715A994AD00730B43 /* CZWareHouseAnnotationView.m */; };
+		CE6B71BB15A997D100730B43 /* CZMapViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */; };
+		CE6B71BD15A99BB100730B43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6B71BC15A99BB100730B43 /* CoreLocation.framework */; };
+		CE6B71C415A9A1DE00730B43 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6B71C315A9A1DE00730B43 /* house.png */; };
 		CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95115A92C1D0095EFE5 /* UIKit.framework */; };
 		CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95315A92C1D0095EFE5 /* Foundation.framework */; };
 		CED3A95615A92C1D0095EFE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */; };
@@ -29,6 +34,14 @@
 		CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZBottombarViewController.m; sourceTree = "<group>"; };
 		CE6B71B015A989C500730B43 /* CZTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZTool.h; sourceTree = "<group>"; };
 		CE6B71B115A989C500730B43 /* CZTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZTool.m; sourceTree = "<group>"; };
+		CE6B71B315A98B9700730B43 /* CZWareHouseAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWareHouseAnnotation.h; sourceTree = "<group>"; };
+		CE6B71B415A98B9700730B43 /* CZWareHouseAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWareHouseAnnotation.m; sourceTree = "<group>"; };
+		CE6B71B615A994AD00730B43 /* CZWareHouseAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWareHouseAnnotationView.h; sourceTree = "<group>"; };
+		CE6B71B715A994AD00730B43 /* CZWareHouseAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWareHouseAnnotationView.m; sourceTree = "<group>"; };
+		CE6B71B915A997D100730B43 /* CZMapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZMapViewDelegate.h; sourceTree = "<group>"; };
+		CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZMapViewDelegate.m; sourceTree = "<group>"; };
+		CE6B71BC15A99BB100730B43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE6B71C315A9A1DE00730B43 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		CED3A94D15A92C1D0095EFE5 /* CZGZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZGZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3A95115A92C1D0095EFE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED3A95315A92C1D0095EFE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6B71BD15A99BB100730B43 /* CoreLocation.framework in Frameworks */,
 				CE6B71A815A9788600730B43 /* MapKit.framework in Frameworks */,
 				CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */,
 				CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */,
@@ -59,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6B71BE15A9A07800730B43 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B71C315A9A1DE00730B43 /* house.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		CED3A94215A92C1C0095EFE5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +101,7 @@
 		CED3A95015A92C1D0095EFE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B71BC15A99BB100730B43 /* CoreLocation.framework */,
 				CE6B71A715A9788600730B43 /* MapKit.framework */,
 				CED3A95115A92C1D0095EFE5 /* UIKit.framework */,
 				CED3A95315A92C1D0095EFE5 /* Foundation.framework */,
@@ -101,6 +124,12 @@
 				CE6B71AE15A979D800730B43 /* CZBottombarViewController.m */,
 				CE6B71B015A989C500730B43 /* CZTool.h */,
 				CE6B71B115A989C500730B43 /* CZTool.m */,
+				CE6B71B315A98B9700730B43 /* CZWareHouseAnnotation.h */,
+				CE6B71B415A98B9700730B43 /* CZWareHouseAnnotation.m */,
+				CE6B71B615A994AD00730B43 /* CZWareHouseAnnotationView.h */,
+				CE6B71B715A994AD00730B43 /* CZWareHouseAnnotationView.m */,
+				CE6B71B915A997D100730B43 /* CZMapViewDelegate.h */,
+				CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */,
 				CED3A95815A92C1D0095EFE5 /* Supporting Files */,
 			);
 			path = CZGZ;
@@ -109,6 +138,7 @@
 		CED3A95815A92C1D0095EFE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B71BE15A9A07800730B43 /* image */,
 				CED3A95915A92C1D0095EFE5 /* CZGZ-Info.plist */,
 				CED3A95A15A92C1D0095EFE5 /* InfoPlist.strings */,
 				CED3A95D15A92C1D0095EFE5 /* main.m */,
@@ -170,6 +200,7 @@
 			files = (
 				CED3A95C15A92C1D0095EFE5 /* InfoPlist.strings in Resources */,
 				CED3A96515A92C1D0095EFE5 /* MainStoryboard.storyboard in Resources */,
+				CE6B71C415A9A1DE00730B43 /* house.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +217,9 @@
 				CE6B71AC15A979BA00730B43 /* CZTopbarViewController.m in Sources */,
 				CE6B71AF15A979D800730B43 /* CZBottombarViewController.m in Sources */,
 				CE6B71B215A989C500730B43 /* CZTool.m in Sources */,
+				CE6B71B515A98B9700730B43 /* CZWareHouseAnnotation.m in Sources */,
+				CE6B71B815A994AD00730B43 /* CZWareHouseAnnotationView.m in Sources */,
+				CE6B71BB15A997D100730B43 /* CZMapViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+@class CZMapViewDelegate;
 
 @interface CZViewController : UIViewController
-
+@property (nonatomic, strong) CZMapViewDelegate * mapViewDelegate;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end

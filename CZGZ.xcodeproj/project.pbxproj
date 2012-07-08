@@ -22,14 +22,14 @@
 		CED3A95115A92C1D0095EFE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED3A95315A92C1D0095EFE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CED3A95915A92C1D0095EFE5 /* CZGZ-Info.plist */ = {isa = PBXFileReference; path = "CZGZ-Info.plist"; sourceTree = "<group>"; };
+		CED3A95915A92C1D0095EFE5 /* CZGZ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZGZ-Info.plist"; sourceTree = "<group>"; };
 		CED3A95B15A92C1D0095EFE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CED3A95D15A92C1D0095EFE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CED3A95F15A92C1D0095EFE5 /* CZGZ-Prefix.pch */ = {isa = PBXFileReference; path = "CZGZ-Prefix.pch"; sourceTree = "<group>"; };
-		CED3A96015A92C1D0095EFE5 /* CZAppDelegate.h */ = {isa = PBXFileReference; path = CZAppDelegate.h; sourceTree = "<group>"; };
+		CED3A95F15A92C1D0095EFE5 /* CZGZ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZGZ-Prefix.pch"; sourceTree = "<group>"; };
+		CED3A96015A92C1D0095EFE5 /* CZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZAppDelegate.h; sourceTree = "<group>"; };
 		CED3A96115A92C1D0095EFE5 /* CZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZAppDelegate.m; sourceTree = "<group>"; };
 		CED3A96415A92C1D0095EFE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CED3A96615A92C1D0095EFE5 /* CZViewController.h */ = {isa = PBXFileReference; path = CZViewController.h; sourceTree = "<group>"; };
+		CED3A96615A92C1D0095EFE5 /* CZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZViewController.h; sourceTree = "<group>"; };
 		CED3A96715A92C1D0095EFE5 /* CZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

@@ -9,6 +9,7 @@
 #import "CZViewController.h"
 #import "CZMapViewDelegate.h"
 #import "CZWareHouseAnnotation.h"
+#import "CZLorryAnnotation.h"
 
 @interface CZViewController ()
 
@@ -41,6 +42,10 @@
     annotation = [[CZWareHouseAnnotation alloc] init];
     annotation.coordinate = CLLocationCoordinate2DMake(31.193751,121.324124);
     [self.mapView addAnnotation:annotation];
+    
+    CZLorryAnnotation * lannotation = [[CZLorryAnnotation alloc] init];
+    lannotation.coordinate = CLLocationCoordinate2DMake(31.191200,121.350000);
+    [self.mapView addAnnotation:lannotation];
 }
 
 - (void)viewDidUnload

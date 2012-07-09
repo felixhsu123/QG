@@ -16,6 +16,9 @@
 		CE6B71BB15A997D100730B43 /* CZMapViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */; };
 		CE6B71BD15A99BB100730B43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6B71BC15A99BB100730B43 /* CoreLocation.framework */; };
 		CE6B71C415A9A1DE00730B43 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6B71C315A9A1DE00730B43 /* house.png */; };
+		CE954F2F15AA7075008958B3 /* lorry.png in Resources */ = {isa = PBXBuildFile; fileRef = CE954F2E15AA7075008958B3 /* lorry.png */; };
+		CE954F3315AA70B0008958B3 /* CZLorryAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */; };
+		CE954F3615AA711F008958B3 /* CZLorryAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */; };
 		CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95115A92C1D0095EFE5 /* UIKit.framework */; };
 		CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95315A92C1D0095EFE5 /* Foundation.framework */; };
 		CED3A95615A92C1D0095EFE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */; };
@@ -42,6 +45,11 @@
 		CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZMapViewDelegate.m; sourceTree = "<group>"; };
 		CE6B71BC15A99BB100730B43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE6B71C315A9A1DE00730B43 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		CE954F2E15AA7075008958B3 /* lorry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lorry.png; sourceTree = "<group>"; };
+		CE954F3115AA70B0008958B3 /* CZLorryAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLorryAnnotation.h; sourceTree = "<group>"; };
+		CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLorryAnnotation.m; sourceTree = "<group>"; };
+		CE954F3415AA711F008958B3 /* CZLorryAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLorryAnnotationView.h; sourceTree = "<group>"; };
+		CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLorryAnnotationView.m; sourceTree = "<group>"; };
 		CED3A94D15A92C1D0095EFE5 /* CZGZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZGZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3A95115A92C1D0095EFE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED3A95315A92C1D0095EFE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +84,7 @@
 		CE6B71BE15A9A07800730B43 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				CE954F2E15AA7075008958B3 /* lorry.png */,
 				CE6B71C315A9A1DE00730B43 /* house.png */,
 			);
 			name = image;
@@ -130,6 +139,10 @@
 				CE6B71B715A994AD00730B43 /* CZWareHouseAnnotationView.m */,
 				CE6B71B915A997D100730B43 /* CZMapViewDelegate.h */,
 				CE6B71BA15A997D100730B43 /* CZMapViewDelegate.m */,
+				CE954F3115AA70B0008958B3 /* CZLorryAnnotation.h */,
+				CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */,
+				CE954F3415AA711F008958B3 /* CZLorryAnnotationView.h */,
+				CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */,
 				CED3A95815A92C1D0095EFE5 /* Supporting Files */,
 			);
 			path = CZGZ;
@@ -201,6 +214,7 @@
 				CED3A95C15A92C1D0095EFE5 /* InfoPlist.strings in Resources */,
 				CED3A96515A92C1D0095EFE5 /* MainStoryboard.storyboard in Resources */,
 				CE6B71C415A9A1DE00730B43 /* house.png in Resources */,
+				CE954F2F15AA7075008958B3 /* lorry.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +234,8 @@
 				CE6B71B515A98B9700730B43 /* CZWareHouseAnnotation.m in Sources */,
 				CE6B71B815A994AD00730B43 /* CZWareHouseAnnotationView.m in Sources */,
 				CE6B71BB15A997D100730B43 /* CZMapViewDelegate.m in Sources */,
+				CE954F3315AA70B0008958B3 /* CZLorryAnnotation.m in Sources */,
+				CE954F3615AA711F008958B3 /* CZLorryAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

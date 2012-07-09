@@ -19,13 +19,13 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier
 {
-    // Drawing code
+    self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.image = [UIImage imageNamed:@"house.png"];
+    }
+    return self;
 }
-*/
 
 @end

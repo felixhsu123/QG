@@ -8,23 +8,35 @@
 
 #import "CZMapViewDelegate.h"
 #import "CZWareHouseAnnotationView.h"
+#import "CZLorryAnnotationView.h"
+#import "CZWareHouseAnnotation.h"
+#import "CZLorryAnnotation.h"
 
 @implementation CZMapViewDelegate
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation
 {
-    static NSString * warehouseId = @"WareHouse";
-    MKAnnotationView * annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:warehouseId];
-    if (!annotationView) {
-        annotationView = [[CZWareHouseAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:warehouseId];
+    static NSString * identifier = nil;
+    
+    if ([annotation isKindOfClass:[CZWareHouseAnnotation class]]) {
+        identifier = @"WareHouse";
+        MKAnnotationView * annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView) {
+            annotationView = [[CZWareHouseAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        }
+        
+        return annotationView;
+    } else if ([annotation isKindOfClass:[CZLorryAnnotation class]]) {
+        identifier = @"Lorry";
+        MKAnnotationView * annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView) {
+            annotationView = [[CZLorryAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        }
+        
+        return annotationView;
     }
     
-    [annotationView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"house.png"]]];
-    CGRect frame = annotationView.frame;
-    frame.size.width = 32;
-    frame.size.height = 32;
-    annotationView.frame = frame;
-    return annotationView;
+    return nil;
 }
 
 @end

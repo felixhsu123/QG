@@ -32,6 +32,7 @@
         if (!annotationView) {
             annotationView = [[CZLorryAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
         }
+        //[mapView selectAnnotation:annotation animated:NO];
         
         return annotationView;
     }

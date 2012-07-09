@@ -15,6 +15,7 @@
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
         self.image = [UIImage imageNamed:@"lorry.png"];
+        self.canShowCallout = YES;
     }
     return self;
 }

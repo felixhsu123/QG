@@ -12,6 +12,7 @@
 @interface CZLorryAnnotation : NSObject <MKAnnotation>
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString * title;
 
 - (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate;
 

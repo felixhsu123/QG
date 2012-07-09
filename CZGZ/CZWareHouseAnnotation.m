@@ -9,11 +9,16 @@
 #import "CZWareHouseAnnotation.h"
 
 @implementation CZWareHouseAnnotation
-@synthesize coordinate=_coordinate;
+@synthesize coordinate=_coordinate, title=_title;
 
 - (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate
 {
     _coordinate = newCoordinate;
+}
+
+- (void)dealloc
+{
+    self.title = nil;
 }
 
 @end

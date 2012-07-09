@@ -34,15 +34,20 @@
     self.mapViewDelegate = [[CZMapViewDelegate alloc] init];
     self.mapView.delegate = self.mapViewDelegate;
     
+    NSString * fullpath = [[NSBundle mainBundle] pathForResource:@"WareHouseData" ofType:@"plist"];
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:fullpath];
+    [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
+        NSDictionary * prop = (NSDictionary *)obj;
+        NSNumber * latitude = [prop objectForKey:@"纬度"];
+        NSNumber * longitude = [prop objectForKey:@"经度"];
+        CZWareHouseAnnotation * annotation = [[CZWareHouseAnnotation alloc] init];
+        annotation.coordinate = CLLocationCoordinate2DMake(latitude.doubleValue, longitude.doubleValue);
+        annotation.title = key;
+        [self.mapView addAnnotation:annotation];
+        [self.mapView selectAnnotation:annotation animated:NO];
+    }];
+    
     // 初始化annotation
-    CZWareHouseAnnotation * annotation = [[CZWareHouseAnnotation alloc] init];
-    annotation.coordinate = CLLocationCoordinate2DMake(31.195366,121.382103);
-    [self.mapView addAnnotation:annotation];
-    
-    annotation = [[CZWareHouseAnnotation alloc] init];
-    annotation.coordinate = CLLocationCoordinate2DMake(31.193751,121.324124);
-    [self.mapView addAnnotation:annotation];
-    
     CZLorryAnnotation * lannotation = [[CZLorryAnnotation alloc] init];
     lannotation.coordinate = CLLocationCoordinate2DMake(31.191200,121.350000);
     [self.mapView addAnnotation:lannotation];

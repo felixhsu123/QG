@@ -19,6 +19,7 @@
 		CE954F2F15AA7075008958B3 /* lorry.png in Resources */ = {isa = PBXBuildFile; fileRef = CE954F2E15AA7075008958B3 /* lorry.png */; };
 		CE954F3315AA70B0008958B3 /* CZLorryAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */; };
 		CE954F3615AA711F008958B3 /* CZLorryAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */; };
+		CE954F3C15AAA417008958B3 /* WareHouseData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE954F3B15AAA417008958B3 /* WareHouseData.plist */; };
 		CED3A95215A92C1D0095EFE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95115A92C1D0095EFE5 /* UIKit.framework */; };
 		CED3A95415A92C1D0095EFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95315A92C1D0095EFE5 /* Foundation.framework */; };
 		CED3A95615A92C1D0095EFE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3A95515A92C1D0095EFE5 /* CoreGraphics.framework */; };
@@ -50,6 +51,7 @@
 		CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLorryAnnotation.m; sourceTree = "<group>"; };
 		CE954F3415AA711F008958B3 /* CZLorryAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLorryAnnotationView.h; sourceTree = "<group>"; };
 		CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLorryAnnotationView.m; sourceTree = "<group>"; };
+		CE954F3B15AAA417008958B3 /* WareHouseData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WareHouseData.plist; sourceTree = "<group>"; };
 		CED3A94D15A92C1D0095EFE5 /* CZGZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZGZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3A95115A92C1D0095EFE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CED3A95315A92C1D0095EFE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +145,7 @@
 				CE954F3215AA70B0008958B3 /* CZLorryAnnotation.m */,
 				CE954F3415AA711F008958B3 /* CZLorryAnnotationView.h */,
 				CE954F3515AA711F008958B3 /* CZLorryAnnotationView.m */,
+				CE954F3B15AAA417008958B3 /* WareHouseData.plist */,
 				CED3A95815A92C1D0095EFE5 /* Supporting Files */,
 			);
 			path = CZGZ;
@@ -215,6 +218,7 @@
 				CED3A96515A92C1D0095EFE5 /* MainStoryboard.storyboard in Resources */,
 				CE6B71C415A9A1DE00730B43 /* house.png in Resources */,
 				CE954F2F15AA7075008958B3 /* lorry.png in Resources */,
+				CE954F3C15AAA417008958B3 /* WareHouseData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
